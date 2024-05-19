@@ -1,0 +1,20 @@
+<!-- templates/index.html -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Chat</title>
+</head>
+<body>
+    <h1>WebSocket Chat</h1>
+    <label for="username">Username: </label>
+    <input type="text" id="username" />
+    <button onclick="connect()">Connect</button>
+    <div id="chat" style="display:none;">
+        <ul id="messages"></ul>
+        <input type="text" id="receiver" placeholder="Receiver" />
+        <input type="text" id="messageInput" autocomplete="off" placeholder="Message" />
+        <button onclick="sendMessage()">Send</button>
+    </div>
+    <script src="/static/js/chat.js"></script>
+</body>
+</html>
